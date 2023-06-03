@@ -26,11 +26,9 @@ private int headY = 7;
         Thread updateThread = new Thread(() -> {
             while (true) {
                 try {
-                    // Your method code goes here
                     update();
 
-                    // Sleep for 100 milliseconds
-                    Thread.sleep(100);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
