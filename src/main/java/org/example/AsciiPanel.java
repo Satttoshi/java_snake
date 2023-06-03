@@ -8,7 +8,8 @@ public class AsciiPanel {
     public AsciiPanel() {
         panel = new char[HEIGHT][WIDTH];
         clear();
-        setChar(4, 0, 'O');
+        setChar(0, 0, 'X');
+        setChar(80, 12, 'X');
         display();
     }
 
