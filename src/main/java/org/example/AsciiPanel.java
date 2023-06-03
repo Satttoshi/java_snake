@@ -7,6 +7,7 @@ public class AsciiPanel {
 
     public AsciiPanel() {
         panel = new char[HEIGHT][WIDTH];
+        clear();
     }
 
     public void clear() {
