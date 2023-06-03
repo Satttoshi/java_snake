@@ -2,12 +2,14 @@ package org.example;
 
 public class AsciiPanel {
     private static final int WIDTH = 80;
-    private static final int HEIGHT = 24;
+    private static final int HEIGHT = 12;
     private char[][] panel;
 
     public AsciiPanel() {
         panel = new char[HEIGHT][WIDTH];
         clear();
+        setChar(4, 0, 'O');
+        display();
     }
 
     public void clear() {
